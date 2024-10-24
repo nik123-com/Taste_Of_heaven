@@ -4,26 +4,27 @@
     box-sizing: border-box;
     font-family: "Baloo 2", sans-serif;
 }
-
 body {
     background-color: white;
-    width: 100%;
-    height: auto;
+    max-height: fit-content;
+    white-space: hidden;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 .logo {
+    width: 15%;
     font-weight: bold;
     font-size: 20px;
     color: black;
 }
-
 .nav {
     position: sticky;
     top: 0;
     background: url(heroImg.png);
-    height: 100px;
+    height: 10vh;
     margin-bottom: -49px;
-    width: 100%;
 }
 
 ul {
@@ -35,11 +36,10 @@ ul {
     font-weight: bold;
     list-style: none;
 }
-
 ul li {
     margin: 10px;
+    align-items: center;
 }
-
 li a {
     text-decoration: none;
     color: whitesmoke;
@@ -51,7 +51,6 @@ li a {
     padding: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
-
 li a:hover {
     color: black;
     background-color: aqua;
@@ -65,7 +64,6 @@ li a:hover {
     align-items: center;
     justify-content: center;
 }
-
 .heroimg {
     color: black;
     text-align: center;
@@ -88,7 +86,6 @@ li a:hover {
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-
 .btn:hover {
     color: #FFFFFF;
     background-color: #C850C0;
@@ -102,20 +99,19 @@ li a:hover {
     width: 100%;
     color: white;
     font-size: 50px;
+    margin: -21px auto;
     text-align: center;
+    margin-top: -13px;
+    padding: 0px;
     background-color: darkred;
-    height: auto;
-    padding: 50px 20px;
+    height: 390px;
 }
-
-.heading,
-.heading1 {
+.heading, .heading1 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
     margin-top: 10px;
 }
-
 .heading2 {
     padding-top: 100px;
     display: flex;
@@ -124,7 +120,6 @@ li a:hover {
     font-family: "Baloo 2", sans-serif;
     color: white;
 }
-
 .para1 {
     font-size: 20px;
     color: white;
@@ -138,15 +133,14 @@ li a:hover {
     padding-top: 50px;
     margin: 28px auto;
 }
-
 .box-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    height: 498px;
 }
-
 .box {
     border: 2px solid red;
     border-radius: 34px;
@@ -158,12 +152,18 @@ li a:hover {
     text-align: center;
     display: inline-block;
 }
-
 .box:hover {
     background-color: beige;
     font-weight: bolder;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(-10px);
+}
+.box img {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 15px;
+    border-radius: 34px;
+    transition: filter 0.3s ease;
 }
 
 #items {
@@ -172,7 +172,6 @@ li a:hover {
     background-color: darkred;
     margin: 1px auto;
 }
-
 .item-container {
     display: flex;
     align-items: center;
@@ -181,7 +180,6 @@ li a:hover {
     gap: 20px;
     padding: 10px;
 }
-
 .item {
     border: 2px solid red;
     width: 233px;
@@ -196,7 +194,6 @@ li a:hover {
     margin: 5px auto;
     overflow: hidden;
 }
-
 .item:hover {
     background-color: aquamarine;
     color: brown;
@@ -204,91 +201,159 @@ li a:hover {
     transform: translateY(-10px);
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
 }
-
-#contact {
-    height: auto;
+.item img {
     width: 100%;
-    background: red;
-    padding: 50px;
-    margin: 0 auto;
-    color: white;
+    height: 50%;
+    border-radius: 34px;
+}
+.item img:hover {
+    filter: none;
 }
 
+#contact {
+    height: 1000px;
+    width: 100%;
+    background: red;
+    padding: 10px;
+    margin: -27px auto;
+    color: red;
+}
+label {
+    color: aliceblue;
+}
+input {
+    color: black;
+    background-color: aliceblue;
+    font-size: 20px;
+}
+fieldset {
+    height: 300px;
+    width: 500px;
+    margin-top: 20px;
+}
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36%;
+    width: 96%;
+}
 form {
     display: inline-block;
     text-align: center;
     color: black;
 }
-
 footer {
     background-color: black;
     padding: 20px;
     color: white;
     text-align: center;
 }
-
-html {
-    scroll-behavior: smooth;
+.btn1 {
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    border-radius: 34px;
+    border: none;
+    margin-top: 10px;
+}
+.btn1:hover {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-/* Responsive Media Queries */
-@media only screen and (max-width: 768px) {
+#search {
+    width: fit-content;
+    height: fit-content;
+    margin: auto 20px;
+    border-radius: 34px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background: transparent;
+    max-width: 190px;
+    border: none;
+}
+#search1 {
+    margin: auto 20px;
+    position: relative;
+    right: 41px;
+    top: 5px;
+    font-size: 22px;
+    height: 40px;
+    color: black;
+    border: none;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+#search:focus {
+    background-color: white;
+    color: black;
+}
+.search {
+    display: flex;
+    gap: 0px;
+    border: 2px solid white;
+    width: 246px;
+    padding: 0px;
+    margin: 13px 50px;
+    border-radius: 34px;
+    height: 50px;
+    background-color: aliceblue;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
     ul {
         flex-direction: column;
         align-items: center;
     }
-
     li a {
         font-size: 20px;
-        padding: 10px 15px;
+        padding: 8px;
     }
-
+    .box-container, .item-container {
+        flex-direction: column;
+    }
+    .box, .item {
+        max-width: 100%;
+        width: 90%;
+    }
     .heroimg {
-        font-size: 35px;
-    }
-
-    .btn {
-        font-size: 20px;
-        padding: 8px 12px;
-    }
-
-    #about {
-        font-size: 40px;
-        padding: 30px;
-    }
-
-    .heading2 {
-        font-size: 40px;
-        padding-top: 50px;
-    }
-
-    #items .item {
-        width: 100%;
-        height: auto;
+        font-size: 30px;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    .heading2 {
-        font-size: 30px;
-        padding-top: 30px;
+/* Tablets (up to 768px) */
+@media (max-width: 768px) {
+    ul {
+        justify-content: space-evenly;
     }
-
+    li a {
+        font-size: 25px;
+    }
     .heroimg {
-        font-size: 28px;
+        font-size: 40px;
     }
-
     .btn {
-        font-size: 18px;
-        padding: 6px 10px;
+        font-size: 20px;
     }
+}
 
+/* Large screens (1024px and above) */
+@media (min-width: 1024px) {
+    .box-container, .item-container {
+        gap: 40px;
+    }
     .box, .item {
-        width: 100%;
-        margin: 10px 0;
+        width: 250px;
     }
-
-    #service, #items, #contact {
+}
+#service, #items, #contact {
         padding: 20px;
     }
 }
